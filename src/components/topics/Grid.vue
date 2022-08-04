@@ -6,8 +6,8 @@
                     <v-card class="c-article" :to="localePath({ path: `/topics_detail/${topic.topics_id}` })">
                         <div class="c-article_thumb">
                             <v-img
-                                v-if="topic.ext_col_08"
-                                :src="topic.ext_col_08.url"
+                                v-if="topic.ext_8"
+                                :src="topic.ext_8.url"
                                 height="200"
                             />
                         </div>

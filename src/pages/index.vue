@@ -79,7 +79,7 @@ export default {
     computed: {
         sliderImages() {
             return this.topics
-                .map((topic) => topic?.ext_col_08?.url)
+                .map((topic) => topic?.ext_8?.url)
                 .filter((sliderImage) => sliderImage);
         }
     },

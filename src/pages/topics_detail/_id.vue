@@ -141,17 +141,17 @@ export default {
             const d = topicsDetailResponse.data.details;
             this.topicsDetail = {
                 ...d,
-                fileType: d?.ext_col_01?.key,
-                fileUrl: d?.ext_col_02?.url,
-                fileDownload: d?.ext_col_02?.dl_link,
-                linkUrl: d?.ext_col_03?.url,
-                linkTitle: d?.ext_col_03?.title,
+                fileType: d?.ext_1?.key,
+                fileUrl: d?.ext_2?.url,
+                fileDownload: d?.ext_2?.dl_link,
+                linkUrl: d?.ext_3?.url,
+                linkTitle: d?.ext_3?.title,
 
                 // for TopicsDetail
-                positionPatterns: d?.ext_col_04,
-                texts: d?.ext_col_07,
-                imageUrls: d?.ext_col_05,
-                subtitles: d?.ext_col_09
+                positionPatterns: d?.ext_4,
+                texts: d?.ext_7,
+                imageUrls: d?.ext_5,
+                subtitles: d?.ext_9
             };
             this.favoriteResponse = await this.$store.$auth.ctx.$axios
                 .get('/rcms-api/1/favorites', {
