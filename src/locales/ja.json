@@ -28,7 +28,7 @@
         "note": "＊このサイトはITP機能のためiOSでは動作しません。<br>ドメインを作成して動作させることはできます。<br>このサイトはデモンストレーションサイトです。"
     },
     "top" : {
-        "latest_articles": "最新記事",
+        "latest_articles": "お知らせ",
         "starred": "お気に入り",
         "more_articles": "記事をもっと見る",
         "more_starred": "お気に入り記事をもっと見る"

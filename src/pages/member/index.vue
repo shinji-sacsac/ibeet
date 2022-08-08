@@ -29,14 +29,14 @@
             class="elevation-1 mt-5 c-table"
             @page-count="pageCount = $event"
         >
-            <template v-slot:item.name="{ item }">
+            <template #item.name="{ item }">
                 <NuxtLink :to="localePath({ path: `/member/detail/${item.id}` })" no-prefetch>
                     {{
                         item.name
                     }}
                 </NuxtLink>
             </template>
-            <template v-slot:item.phone="{ item }">
+            <template #item.phone="{ item }">
                 <a :href="`tel:${item.phone}`">{{ item.phone }}</a>
             </template>
         </v-data-table>

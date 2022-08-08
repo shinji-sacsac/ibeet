@@ -89,6 +89,7 @@
                 </div>
             </template>
         </v-app-bar>
+
         <v-main>
             <v-container class="l-content_inner" fluid>
                 <nuxt />
@@ -97,8 +98,7 @@
 
         <v-footer color="#1414A0" padless>
             <v-row justify="center" no-gutters class="pt-3">
-                <a href="https://github.com/diverta/front_nuxt_auth"><small class="my-4 pt-3 l-footer_copyright">Github repository</small></a>
-                <a href="https://kuroco.app/"><img src="~/assets/images/logo-kuroco.svg" width="120" class="pl-4 l-footer_logo"></a>
+                <a href="https://www.ibeet.co.jp/"><img src="~/assets/images/logo.png" width="120" class="pl-4 l-footer_logo"></a>
                 <v-col class="#1414A0 text-center white--text" cols="12" />
             </v-row>
         </v-footer>
@@ -124,7 +124,7 @@
 export default {
     data() {
         return {
-            langDefault: 'English',
+            langDefault: 'Japanese',
             clipped: false,
             drawer: false,
             fixed: false,
@@ -132,34 +132,34 @@ export default {
                 {
                     icon: 'mdi-home',
                     title: 'Home',
-                    titleLoggedIn: 'Home',
+                    titleLoggedIn: 'ホーム',
                     to: '/'
                 },
                 {
                     icon: 'mdi-newspaper-variant',
-                    title: 'Articles',
+                    title: '最新記事',
                     to: '/topics_list'
                 },
                 {
                     icon: 'mdi-star',
-                    title: 'Starred',
+                    title: 'お気に入り',
                     to: '/favourite'
                 },
                 {
                     icon: 'mdi-account-tie',
-                    title: 'Member',
+                    title: 'メンバー',
                     to: '/member'
                 },
                 {
                     icon: 'mdi-account-box',
                     title: 'My Profile',
                     to: '/profile'
-                },
-                {
-                    icon: 'mdi-send',
-                    title: 'Feedback',
-                    to: '/inquiry'
                 }
+                // {
+                //     icon: 'mdi-send',
+                //     title: 'Feedback',
+                //     to: '/inquiry'
+                // }
             ],
             miniVariant: false,
             right: true,

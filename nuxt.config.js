@@ -23,7 +23,8 @@ export default {
             lang: 'ja'
         },
         titleTemplate: '%s - ',
-        title: envSettings.META_TITLE,
+        title: 'IBeeT',
+        // title: envSettings.META_TITLE,
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -122,10 +123,10 @@ export default {
             { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
             { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' }
         ],
-        defaultLocale: 'en',
+        defaultLocale: 'ja',
         strategy: 'prefix_except_default',
         vueI18n: {
-            fallbackLocale: 'en',
+            fallbackLocale: 'ja',
         },
         vueI18nLoader: true,
         langDir: '@/locales/'
