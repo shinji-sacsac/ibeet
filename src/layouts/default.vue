@@ -53,13 +53,13 @@
 
             <v-toolbar-title height="30" :to="localePath('/')" class="l-header_user" v-text="subtitle" />
 
-            <div class="l-header_lang">
+            <!-- <div class="l-header_lang">
                 <v-select
                     :value="$i18n.localeProperties.name"
                     :items="$i18n.locales.map((locale) => locale.name)"
                     @input="(n) => $i18n.setLocale($i18n.locales.find(({ name }) => name === n).code)"
                 />
-            </div>
+            </div> -->
 
             <template v-if="$auth.loggedIn">
                 <v-btn icon class="l-header_logout" @click="logout">
@@ -140,26 +140,26 @@ export default {
                     title: '最新記事',
                     to: '/topics_list'
                 },
-                {
-                    icon: 'mdi-star',
-                    title: 'お気に入り',
-                    to: '/favourite'
-                },
-                {
-                    icon: 'mdi-account-tie',
-                    title: 'メンバー',
-                    to: '/member'
-                },
+                // {
+                //     icon: 'mdi-star',
+                //     title: 'お気に入り',
+                //     to: '/favourite'
+                // },
+                // {
+                //     icon: 'mdi-account-tie',
+                //     title: 'メンバー',
+                //     to: '/member'
+                // },
                 {
                     icon: 'mdi-account-box',
-                    title: 'My Profile',
+                    title: 'プロフィール',
                     to: '/profile'
+                },
+                {
+                    icon: 'mdi-send',
+                    title: 'お問い合わせ',
+                    to: '/inquiry'
                 }
-                // {
-                //     icon: 'mdi-send',
-                //     title: 'Feedback',
-                //     to: '/inquiry'
-                // }
             ],
             miniVariant: false,
             right: true,
