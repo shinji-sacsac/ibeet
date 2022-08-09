@@ -98,8 +98,11 @@
 
         <v-footer color="#1414A0" padless>
             <v-row justify="center" no-gutters class="pt-3">
-                <a href="https://www.ibeet.co.jp/"><img src="~/assets/images/logo.png" width="120" class="pl-4 l-footer_logo"></a>
+                <img src="~/assets/images/logo.png" width="120" class="pl-4 mb-1 l-footer_logo">
                 <v-col class="#1414A0 text-center white--text" cols="12" />
+                <p class="pl-4 mb-0">
+                    Copyright &copy; IBeeT Corporation. All Rights Reserved.
+                </p>
             </v-row>
         </v-footer>
 
@@ -136,15 +139,21 @@ export default {
                     to: '/'
                 },
                 {
+                    icon: 'mdi-newspaper-variant',
+                    title: 'お知らせ一覧',
+                    to: '/topics_list'
+                },
+                {
                     icon: 'mdi-download',
                     title: '申請書類一式',
                     to: '/#topDownload'
                 },
                 {
-                    icon: 'mdi-newspaper-variant',
-                    title: '最新記事',
-                    to: '/topics_list'
+                    icon: 'mdi-help-circle',
+                    title: 'FAQ',
+                    to: '/#topFaq'
                 },
+
                 // {
                 //     icon: 'mdi-star',
                 //     title: 'お気に入り',
@@ -157,7 +166,7 @@ export default {
                 // },
                 {
                     icon: 'mdi-account-box',
-                    title: 'プロフィール',
+                    title: 'マイプロフィール',
                     to: '/profile'
                 },
                 {

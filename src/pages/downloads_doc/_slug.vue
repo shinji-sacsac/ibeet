@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="title">
+        <h1 class="title c-text_bold">
             {{ response.details.subject }}
         </h1>
         <div class="post" v-html="response.details.contents" />

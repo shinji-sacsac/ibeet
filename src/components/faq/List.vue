@@ -15,11 +15,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div v-for="n in faq" :key="n.slug">
-                <nuxt-link :to="`/faq/${n.topics_id}`">
-                    {{ n.subject }}
-                </nuxt-link>
-            </div> -->
         </div>
         <div v-else class="row">
             <div class="text-center py-4 grey--text col">

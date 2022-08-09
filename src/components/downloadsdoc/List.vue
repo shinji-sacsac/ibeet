@@ -10,8 +10,8 @@
                         <v-img
                             v-if="n.download_icon"
                             :src="n.download_icon.url"
-                            width="200"
-                            height="200"
+                            width="100"
+                            height="100"
                             class="img-responsive mx-auto d-block mb-3"
                         />
                         </v-img>

@@ -1,6 +1,6 @@
 <template>
     <section class="">
-        <div>
+        <!-- <div>
             <v-btn-toggle v-model="text" class="c-navi_filter" group>
                 <v-btn value="0" @change="changeCategoryAll">
                     ALL
@@ -14,9 +14,9 @@
                     {{ item.value }}
                 </v-btn>
             </v-btn-toggle>
-        </div>
+        </div> -->
         <div class="mt-4">
-            <TopicsGrid :topics="topics" />
+            <TopicsHomelist :topics="topics" />
         </div>
         <div class="text-center mt-5 pt-5">
             <v-pagination v-if="Math.ceil(totalCnt / perPage) > 1"
@@ -38,7 +38,7 @@ export default {
             categories: [],
             topics: [],
             page: 1,
-            perPage: 12,
+            perPage: 10,
             category_key: null,
             totalCnt: 0
         };
