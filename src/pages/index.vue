@@ -33,25 +33,13 @@
                 </a>
             </div>
 
-            <!-- <h1 class="text-left mt-5 pt-4">
-                {{ $t("top.starred") }}
-            </h1>
-            <TopicsList :topics="favourite" />
-            <div class="text-center py-5 white--text">
-                <a
-                    type="submit"
-                    block
-                    x-large
-                    color="success"
-                    class="c-btn c-btn_main c-btn_md c-btn_icon"
-                    @click="() => $router.push(localePath('/favourite/'))"
-                >
-                    {{ $t("top.more_starred") }}
-                    <v-icon dark right class="icon">
-                        mdi-arrow-right-drop-circle
-                    </v-icon>
-                </a>
-            </div> -->
+            <div id="topDownload" class="topDownload">
+                <DownloadsdocList :downloads="downloads" />
+            </div>
+
+            <div id="topFaq" class="topFaq">
+                <FaqList :faq="faq" />
+            </div>
         </div>
     </client-only>
 </template>
@@ -62,7 +50,9 @@ export default {
     auth: false,
     data: () => ({
         topics: [],
-        favourite: [],
+        downloads: [],
+        faq: [],
+        // favourite: [],
         maxFavPerPage: 5 // This is fav list, for latest topic, go to below updateTopics() section, search for cnt=6
     }),
     computed: {
@@ -80,6 +70,28 @@ export default {
                     '/rcms-api/1/content/list?cnt=6'
                 );
                 this.topics = response.data.list;
+            } catch (e) {
+                this.$snackbar.error(e?.response?.data?.errors?.[0]?.message);
+            }
+        },
+        async updateDownloads() {
+            try {
+                this.downloads = [];
+                const downloadsresponse = await this.$store.$auth.ctx.$axios.get(
+                    '/rcms-api/3/downloads_doc'
+                );
+                this.downloads = downloadsresponse.data.list;
+            } catch (e) {
+                this.$snackbar.error(e?.response?.data?.errors?.[0]?.message);
+            }
+        },
+        async updateFaq() {
+            try {
+                this.faq = [];
+                const faqresponse = await this.$store.$auth.ctx.$axios.get(
+                    '/rcms-api/4/faq'
+                );
+                this.faq = faqresponse.data.list;
             } catch (e) {
                 this.$snackbar.error(e?.response?.data?.errors?.[0]?.message);
             }
@@ -124,7 +136,9 @@ export default {
             handler(to, from) {
                 if (to) {
                     this.updateTopics();
-                    this.updateFavourite();
+                    this.updateDownloads();
+                    this.updateFaq();
+                    // this.updateFavourite();
                 }
             },
             immediate: true

@@ -136,6 +136,11 @@ export default {
                     to: '/'
                 },
                 {
+                    icon: 'mdi-download',
+                    title: '申請書類一式',
+                    to: '/#topDownload'
+                },
+                {
                     icon: 'mdi-newspaper-variant',
                     title: '最新記事',
                     to: '/topics_list'

@@ -11,7 +11,7 @@
 export default {
     async asyncData({ $axios, params }) {
         return {
-            response: await $axios.$get(`/rcms-api/3/downloaddetail/${params.slug}`)
+            response: await $axios.$get(`/rcms-api/3/downloads_doc_detail/${params.slug}`)
         };
     }
 };
