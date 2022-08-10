@@ -1,0 +1,29 @@
+.faqlist {
+  & + .faqlist {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  dt {
+    padding-left: 1rem;
+    text-indent: -1rem;
+    font-weight: bold;
+    &::before {
+      content: 'Q.';
+      margin-right: 0.5rem;
+      font-size: 140%;
+    }
+  }
+
+  dd {
+    margin-top: .5rem;
+    padding-left: 1rem;
+    text-indent: -1rem;
+    &::before {
+      content: 'A.';
+      margin-right: 0.5rem;
+      font-size: 140%;
+    }
+  }
+}

@@ -3,13 +3,18 @@
         <h1 class="title c-text_bold">
             {{ response.details.subject }}
         </h1>
-        <div class="post" v-html="response.details.contents" />
-        <!-- <div class="post">
-            <dl v-for="n in response.details" :key="n.faq_group_q">
-                <dt>{{ n.faq_group_q }}</dt>
-                <dd>{{ n.faq_group_a }}</dd>
+        <!-- <div class="post" v-html="response.details.contents" />
+        <dt>{{ response.details.faq_group_q }}</dt> -->
+
+        <!-- <p>{{ response.details.faq_group_q }}</p>
+        <p>{{ response.details.faq_group_a }}</p> -->
+
+        <div class="post">
+            <dl v-for="(item, idx) in response.details.faq_group_q" :key="idx" class="faqlist">
+                <dt>{{ item }}</dt>
+                <dd>{{ response.details.faq_group_a[idx] }}</dd>
             </dl>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -20,5 +25,6 @@ export default {
             response: await $axios.$get(`/rcms-api/4/faqdetail/${params.slug}`)
         };
     }
+
 };
 </script>
