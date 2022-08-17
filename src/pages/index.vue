@@ -40,6 +40,10 @@
             <div id="topFaq" class="topFaq">
                 <FaqList :faq="faq" />
             </div>
+
+            <div id="topIbeet" class="topIbeet">
+                <TopIbeet />
+            </div>
         </div>
     </client-only>
 </template>

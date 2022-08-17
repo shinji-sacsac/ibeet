@@ -120,8 +120,8 @@ export default {
     },
     i18n: {
         locales: [
-            { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
-            { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' }
+            { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
+            { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' }
         ],
         defaultLocale: 'ja',
         strategy: 'prefix_except_default',
