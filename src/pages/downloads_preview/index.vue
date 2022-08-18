@@ -19,7 +19,7 @@
 export default {
     async asyncData({ $axios, route }) {
         return {
-            response: await $axios.$get('/rcms-api/3/downloads_doc_detail/preview', {
+            response: await $axios.$get('/rcms-api/3/downloads/preview', {
                 params: {
                     preview_token: route.query.preview_token
                 }
