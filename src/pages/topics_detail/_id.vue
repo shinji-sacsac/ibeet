@@ -23,7 +23,7 @@
                         </v-row>
                     </v-card>
                     <v-card flat>
-                        {{ $dateFns.format(topicsDetail.inst_ymdhi, 'yyyy/MM/dd') }}
+                        {{ $dateFns.format(topicsDetail.ymd, 'yyyy/MM/dd') }}
                         <!-- <div class="text-right mt-2">
                             <v-btn icon :color="favoriteColor" @click="onClickToggleFavorite">
                                 <v-icon x-large left>
