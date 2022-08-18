@@ -77,7 +77,7 @@
                         {{ $t('common.sign_in') }}
                     </button>
                 </div>
-                <div v-else class="white--text">
+                <!-- <div v-else class="white--text">
                     <span class="d-none d-sm-inline">New to Muzica?</span>
                     <button
                         class="c-btn c-btn_sm c-btn_dark ml-2"
@@ -86,7 +86,7 @@
                     >
                         Sign Up
                     </button>
-                </div>
+                </div> -->
             </template>
         </v-app-bar>
 

@@ -9,11 +9,11 @@
                             <span v-html="$t('login.welcomeback')" />
                         </h1>
                         <p>{{ $t('login.message') }}</p>
-                        <p>
+                        <!-- <p>
                             {{ $t('login.demoaccount') }}<br>
                             <strong>{{ $t('common.sitekey') }}：</strong>dev-nuxt-auth<br>
                             <strong>{{ $t('common.id') }}：</strong>demo@kuroco-mail.app<br>
-                            <strong>{{ $t('common.password') }}：</strong>demo0512<br>
+                            <strong>{{ $t('common.password') }}：</strong>demo0512<br> -->
                         </p>
                     </div>
                 </div>
@@ -49,11 +49,11 @@
                                         outlined
                                         @click:append="() => showsPassword = !showsPassword"
                                     />
-                                    <p>
+                                    <!-- <p>
                                         <NuxtLink :to="localePath('/reminder')">
                                             {{ $t('login.forget_password') }}
                                         </NuxtLink>
-                                    </p>
+                                    </p> -->
                                     <div class="text-center white--text">
                                         <button
                                             type="submit"

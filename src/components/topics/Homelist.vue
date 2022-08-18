@@ -8,7 +8,7 @@
                     class="row c-table_row"
                 >
                     <div class="col-sm-2 col-auto c-table_col">
-                        {{ $dateFns.format(item.inst_ymdhi, "yyyy/MM/dd") }}
+                        {{ $dateFns.format(item.ymd, "yyyy/MM/dd") }}
                     </div>
                     <div class="col-sm col-12 c-table_col">
                         <NuxtLink

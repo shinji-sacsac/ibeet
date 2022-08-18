@@ -19,7 +19,7 @@
         "logged_out": "ログアウトしました"
     },
     "login" : {
-        "welcomeback": "ようこそ Muzica へ！",
+        "welcomeback": "ようこそ IBeeT へ！",
         "message" : "ここから先はログインしないと遷移できません。",
         "demoaccount": "デモサイト用アカウント",
         "site_key": "サイトキー",
