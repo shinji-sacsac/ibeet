@@ -106,16 +106,16 @@ export default {
                 position: detailsObj?.role || '',
                 department: detailsObj?.department || '',
                 profile: {
-                    'First Name': detailsObj.name1 || 'N/A',
-                    'Last Name': detailsObj.name2 || 'N/A',
-                    'Hire Date': detailsObj?.hire_date || 'N/A',
-                    Department: detailsObj.department || 'N/A',
-                    Position: detailsObj.role || 'N/A',
-                    Phone: detailsObj.tel || 'N/A',
-                    Email: detailsObj.email || 'N/A',
-                    Office: detailsObj?.pull_down?.label || 'N/A',
-                    Hobby: detailsObj?.multiple_check?.map(({ label }) => label)?.join(', ') || 'N/A',
-                    Notes: detailsObj?.notes || 'N/A'
+                    姓: detailsObj.name1 || 'N/A',
+                    名: detailsObj.name2 || 'N/A',
+                    入社日: detailsObj?.hire_date || 'N/A',
+                    部署: detailsObj.department || 'N/A',
+                    役職: detailsObj.role || 'N/A',
+                    電話番号: detailsObj.tel || 'N/A',
+                    Emailアドレス: detailsObj.email || 'N/A',
+                    会社住所: detailsObj?.pull_down?.label || 'N/A',
+                    趣味: detailsObj?.multiple_check?.map(({ label }) => label)?.join(', ') || 'N/A',
+                    メモ: detailsObj?.notes || 'N/A'
                 }
             };
         } catch (e) {
