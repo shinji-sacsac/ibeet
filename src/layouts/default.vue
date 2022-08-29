@@ -183,7 +183,7 @@ export default {
     computed: {
         subtitle() {
             return this.$store.$auth.loggedIn
-                ? `${this.$i18n.t('common.hi')}${this.$auth.user.name1}`
+                ? `${this.$i18n.t('common.hi')}${this.$auth.user.name1}様`
                 : '';
         },
         // snackbarが自動でfalseに設定するためセッタを用意して、明示的にdispatchからOffするようにする
