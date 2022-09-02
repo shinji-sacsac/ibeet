@@ -104,8 +104,8 @@ export default {
                     name: 'hire_date',
                     label: this.$i18n.t('label.hire_date'),
                     type: 'FormDate',
-                    'label-class': ['required'],
-                    validation: 'required',
+                    // 'label-class': ['required'],
+                    validation: '',
                     disableErrors: true
                 },
                 {
@@ -126,8 +126,8 @@ export default {
                     name: 'tel',
                     label: this.$i18n.t('label.phone'),
                     type: 'FormText',
-                    validation: 'required|tel',
-                    'label-class': ['required'],
+                    validation: '',
+                    // 'label-class': ['required'],
                     disableErrors: true
                 },
                 {
@@ -146,109 +146,109 @@ export default {
                     'label-class': ['required'],
                     disableErrors: true
                 },
-                {
-                    name: 'profileimage',
-                    type: 'FormFileUpload',
-                    label: this.$i18n.t('label.avatar')
-                },
-                {
-                    name: 'pull_down',
-                    label: this.$i18n.t('label.office'),
-                    type: 'FormSingleOption',
-                    options: [
-                        {
-                            key: '0',
-                            value: ' ',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '1',
-                            value: 'Tokyo',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '2',
-                            value: 'Osaka',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '3',
-                            value: 'Malaysia',
-                            default: false,
-                            attribute: { group: '2' }
-                        }
-                    ]
-                },
-                {
-                    name: 'multiple_check',
-                    label: this.$i18n.t('label.hobby'),
-                    type: 'FormMultipleChoice',
-                    options: [
-                        {
-                            key: '1',
-                            value: 'Reading',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '2',
-                            value: 'Watching TV',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '3',
-                            value: 'Family Time',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '4',
-                            value: 'Going to Movies',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '5',
-                            value: 'Fishing',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '6',
-                            value: 'Computer',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '7',
-                            value: 'Gardening',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '8',
-                            value: 'Renting Movies',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '9',
-                            value: 'Walking',
-                            default: false,
-                            attribute: { group: '2' }
-                        },
-                        {
-                            key: '10',
-                            value: 'Exercise',
-                            default: false,
-                            attribute: { group: '2' }
-                        }
-                    ]
-                },
+                // {
+                //     name: 'profileimage',
+                //     type: 'FormFileUpload',
+                //     label: this.$i18n.t('label.avatar')
+                // },
+                // {
+                //     name: 'pull_down',
+                //     label: this.$i18n.t('label.office'),
+                //     type: 'FormSingleOption',
+                //     options: [
+                //         {
+                //             key: '0',
+                //             value: ' ',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '1',
+                //             value: 'Tokyo',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '2',
+                //             value: 'Osaka',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '3',
+                //             value: 'Malaysia',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         }
+                //     ]
+                // },
+                // {
+                //     name: 'multiple_check',
+                //     label: this.$i18n.t('label.hobby'),
+                //     type: 'FormMultipleChoice',
+                //     options: [
+                //         {
+                //             key: '1',
+                //             value: 'Reading',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '2',
+                //             value: 'Watching TV',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '3',
+                //             value: 'Family Time',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '4',
+                //             value: 'Going to Movies',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '5',
+                //             value: 'Fishing',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '6',
+                //             value: 'Computer',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '7',
+                //             value: 'Gardening',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '8',
+                //             value: 'Renting Movies',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '9',
+                //             value: 'Walking',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         },
+                //         {
+                //             key: '10',
+                //             value: 'Exercise',
+                //             default: false,
+                //             attribute: { group: '2' }
+                //         }
+                //     ]
+                // },
                 {
                     name: 'notes',
                     label: this.$i18n.t('label.notes'),
