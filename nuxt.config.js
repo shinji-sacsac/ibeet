@@ -37,15 +37,15 @@ export default {
                 hid: 'og:title',
                 'data-kuroco-replace': 'og_title',
                 property: 'og:title',
-                content: 'Kuroco sample'
+                content: 'IBeeT'
             },
             {
                 hid: 'og:description',
                 'data-kuroco-replace': 'og_description',
                 property: 'og:description',
-                content: 'Kuroco sample page'
+                content: 'IBeeT'
             },
-            { hid: 'robots', name: 'robots', content: envSettings.ROBOTS }
+            // { hid: 'robots', name: 'robots', content: envSettings.ROBOTS }
         ],
         link: [
             { rel: 'icon', type: 'image/svg+xml', href: '/icon_kuroco.svg' },
@@ -120,8 +120,8 @@ export default {
     },
     i18n: {
         locales: [
-            { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' },
-            { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' }
+            { code: 'ja', iso: 'ja-JP', file: 'ja.json', name: '日本語' }
+            // { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' }
         ],
         defaultLocale: 'ja',
         strategy: 'prefix_except_default',
