@@ -150,3 +150,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+    .topDownload {
+        padding-top: 70px;
+        margin-top:-70px;
+    }
+</style>

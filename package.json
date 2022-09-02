@@ -27,6 +27,7 @@
     "cross-env": "^7.0.3",
     "nuxt": "^2.15.7",
     "validator": "^13.7.0",
+    "vue-scrollto": "^2.20.0",
     "vue-snack": "^0.1.4",
     "vuetify": "^2.5.5",
     "vuetify-datetime-picker": "^2.1.1"

@@ -68,7 +68,8 @@ export default {
         '@/plugins/axios',
         '@/plugins/snackbar.client',
         '@/plugins/parseFormulateSchema.client',
-        '@/plugins/formulateInputsRegister.client'
+        '@/plugins/formulateInputsRegister.client',
+        '@/plugins/vue-scrollto'
     ],
     /*
    ** Auto import components
